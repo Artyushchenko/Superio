@@ -1,0 +1,19 @@
+@import '../../../../styles/variables';
+
+a {
+  display: block;
+  text-decoration: none;
+  width: max-content;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    span {
+      color: $main-color;
+      font-size: 27px;
+      font-weight: 600;
+    }
+  }
+}

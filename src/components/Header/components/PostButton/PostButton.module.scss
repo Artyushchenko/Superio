@@ -1,0 +1,10 @@
+@import '../../../../styles/variables';
+
+.post {
+  height: $header-height;
+  cursor: pointer;
+  width: 140px;
+  border-radius: 8px;
+  background-color: $orange-color;
+  border: none;color: $main-color;
+}

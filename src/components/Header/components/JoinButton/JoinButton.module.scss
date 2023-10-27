@@ -1,0 +1,11 @@
+@import '../../../../styles/variables';
+
+.join {
+  height: $header-height;
+  cursor: pointer;
+  width: 180px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: $main-color;
+  border: 2px solid $main-color;
+}

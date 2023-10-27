@@ -1,9 +1,9 @@
+import { Slide } from "./components/Slide/Slide"
 
 function App() {
-  
-  // return (
-    
-  // )
+  return (
+    <Slide />
+  )
 }
 
 export default App

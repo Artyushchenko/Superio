@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;600;700&display=swap');
+@import './variables';
+
+* {
+  font-family: 'Jost', sans-serif;
+  font-size: $main-font-size;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  max-width: 100%;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.09);
+    }
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    background-clip: padding-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    min-height: 10px;
+
+    &:active {
+      background: rgba(0, 0, 0, 0.61);
+      border-radius: 100px;
+    }
+  }
+}

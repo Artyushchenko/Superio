@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  height: 960px;
+  padding: 30px;
+  background: url('../../../public/images/slide/header-bg.png'), linear-gradient(to bottom right, #10195D, #1967D2);
+  background-position: center;
+}
