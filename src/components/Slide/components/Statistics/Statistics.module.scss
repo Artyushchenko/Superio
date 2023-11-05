@@ -1,0 +1,22 @@
+@import '../../../../styles/variables';
+
+.container {
+  width: 850px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+
+  .block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $main-color;
+    gap: 5px;
+    font-size: calc(#{$main-font-size} + 3px);
+
+    .bigger {
+      font-size: calc(#{$main-font-size} + 15px);
+      font-weight: 600;
+    }
+  }
+}

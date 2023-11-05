@@ -1,0 +1,100 @@
+@import '../../../../../../styles/variables';
+
+@mixin flexbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@mixin flexbox-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1070px;
+
+  .headers {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: max-content;
+
+    p {
+      margin-left: 22px;
+      width: 280px;
+      color: $main-color;
+    }
+  }
+
+  .inputs {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: max-content;
+    height: 80px;
+    background-color: $main-color;
+    border-radius: 8px;
+    gap: 20px;
+
+    .field {
+      @include flexbox;
+      width: 280px;
+      height: 60px;
+      gap: 20px;
+      color: $gray;      
+      border-right: 2px solid #ECEDF2;
+
+      &:nth-child(1) {
+        margin-left: 20px;
+      }
+      
+      &:nth-child(3) {
+        cursor: pointer;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .image {
+        @include flexbox-img;
+      }
+
+      input {
+        border: none;
+        padding: 0;
+        width: 200px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .orange {
+      cursor: pointer;
+      height: 60px;
+      width: 150px;
+      padding: 0;
+      background-color: $orange-color;
+      color: $main-color;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .left {
+      @include flexbox;
+      gap: 20px;
+    }
+  }
+}
+
+.block {
+  width: 1070px;
+  height: 80px;
+  background-color: $main-color;
+  border-radius: 8px;
+  border: 1px solid #ECEDF2;
+  box-shadow: 0px 6px 15px 0px rgba(64, 79, 104, 0.05);
+}

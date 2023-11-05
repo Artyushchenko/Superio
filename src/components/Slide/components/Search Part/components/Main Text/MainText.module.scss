@@ -1,0 +1,12 @@
+@import '../../../../../../styles/variables';
+
+.main {
+  text-align: center;
+  color: $main-color;
+
+  .big {
+    display: block;
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
